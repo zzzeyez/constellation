@@ -58,7 +58,7 @@ class Particle {
   // draw single particle
   draw() {
     noStroke();
-    fill("rgba(255,255,255,0.7)");
+    fill("rgba(255,255,255,0.8)");
     circle(this.pos.x, this.pos.y, this.size);
   }
 
@@ -79,7 +79,7 @@ class Particle {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
 
       if (d < 80) {
-        stroke("rgba(255,255,255,0.3)");
+        stroke("rgba(255,255,255,0.5)");
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
       }
     });

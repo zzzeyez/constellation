@@ -26,11 +26,11 @@ body {
 
 .header {
 	position: absolute;
-	/* left: -0.5ch; */
+	left: 5%;
 	top: -30%;
 	font-family: lemonmedium;
 	color: #fff;
-  font-size: 300px;
+  font-size: 20vw;
   line-height: 1em;
 }
 
@@ -48,7 +48,7 @@ body {
   padding: 30px;
   /* left: 60%; */
   right: 10%;
-	bottom: 10%;
+	bottom: 20%;
   /* top: 60%; */
   height: auto;
 	width: 30%;
@@ -66,7 +66,7 @@ body {
 .main p {
   padding: 0;
   margin: 0;
-	font-size: 24px;
+	font-size: 30px;
   line-height: 1em;
 	/* background: #000; */
 }

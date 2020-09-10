@@ -7,14 +7,14 @@ var col = {
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-	frameRate(12);
+	frameRate(30);
 
 	// random color
 	col.r = random(200, 230);
 	col.g = random(200, 230);
 	col.b = random(200, 230);
 
-  const particlesLength = Math.floor(window.innerWidth / 10);
+  const particlesLength = Math.floor(window.innerWidth / 2);
 
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
@@ -31,6 +31,7 @@ function draw() {
 }
 
 function mousePressed() {
+	// random color
 	col.r = random(200, 230);
 	col.g = random(200, 230);
 	col.b = random(200, 230);
@@ -44,7 +45,7 @@ class Particle {
     // velocity
     this.vel = createVector(random(-1, 1), random(-1, 1));
     // size
-    this.size = random(3, 8);
+    this.size = random(1, 3);
   }
 
   // update movement by adding velocity
@@ -58,7 +59,7 @@ class Particle {
   // draw single particle
   draw() {
     noStroke();
-    fill("rgba(255,255,255,0.8)");
+    fill("rgba(255,255,255,0.3)");
     circle(this.pos.x, this.pos.y, this.size);
   }
 
@@ -79,7 +80,7 @@ class Particle {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
 
       if (d < 80) {
-        stroke("rgba(255,255,255,0.5)");
+        stroke("rgba(255,255,255,0.3)");
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
       }
     });

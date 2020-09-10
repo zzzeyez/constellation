@@ -30,8 +30,8 @@ body {
 	top: -30%;
 	font-family: lemonmedium;
 	color: #fff;
-  font-size: 20vw;
-  line-height: 1em;
+  font-size: 20vh;
+  /* line-height: 1em; */
 }
 
 /* .header h1 { */
